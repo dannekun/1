@@ -16,6 +16,14 @@ public class HealthyPets {
         public final String djurNamn;
         public final int djurVikt;
 
+        public String getDjurNamn() {
+            return djurNamn;
+        }
+
+        public int getDjurVikt() {
+            return djurVikt;
+        }
+
         Namn(String namn, int vikt){
             this.djurNamn = namn;
             this.djurVikt =vikt;
@@ -39,19 +47,19 @@ public class HealthyPets {
         svarCase = in.nextLine();
         svar = svarCase.toLowerCase();
         if (svar.equals("sixten")) {
-            Djur sixten = new Hund(Namn.SIXTEN.djurNamn, Namn.SIXTEN.djurVikt);
+            Djur sixten = new Hund(Namn.SIXTEN.getDjurNamn(), Namn.SIXTEN.getDjurVikt());
             System.out.println(sixten.portion());
         } else if (svar.equals("dogge")) {
-            Djur dogge = new Hund(Namn.DOGGE.djurNamn, Namn.DOGGE.djurVikt);
+            Djur dogge = new Hund(Namn.DOGGE.getDjurNamn(), Namn.DOGGE.getDjurVikt());
             System.out.println(dogge.portion());
         } else if (svar.equals("venus")) {
-            Djur venus = new Katt(Namn.VENUS.djurNamn, Namn.VENUS.djurVikt);
+            Djur venus = new Katt(Namn.VENUS.getDjurNamn(), Namn.VENUS.getDjurVikt());
             System.out.println(venus.portion());
         } else if (svar.equals("ove")) {
-            Djur ove = new Katt(Namn.OVE.djurNamn, Namn.OVE.djurVikt);
+            Djur ove = new Katt(Namn.OVE.getDjurNamn(), Namn.OVE.getDjurVikt());
             System.out.println(ove.portion());
         } else if (svar.equals("hypno")) {
-            Djur hypno = new Orm(Namn.HYPNO.djurNamn, Namn.HYPNO.djurVikt);
+            Djur hypno = new Orm(Namn.HYPNO.getDjurNamn(), Namn.HYPNO.getDjurVikt());
             System.out.println(hypno.portion());
         } else {
             Radbrytning();
