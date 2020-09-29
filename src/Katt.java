@@ -5,6 +5,8 @@
  * Project: 1
  * Copyright: MIT
  */
+
+//arv & interface
 public class Katt extends Djur implements DjurInterface {
 
     Katt() {

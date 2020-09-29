@@ -5,7 +5,9 @@
  * Project: 1
  * Copyright: MIT
  */
-public class Orm extends Djur {
+
+//arv & interface
+public class Orm extends Djur implements DjurInterface {
 
     Orm() {
     }

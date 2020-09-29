@@ -5,6 +5,8 @@
  * Project: 1
  * Copyright: MIT
  */
+
+//arv & interface
 public class Hund extends Djur implements DjurInterface {
 
 

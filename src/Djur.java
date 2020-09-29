@@ -5,9 +5,12 @@
  * Project: 1
  * Copyright: MIT
  */
+
+//interface
 public class Djur implements DjurInterface {
 
 
+    //inkapsling
     private int vikt;
     private String namn;
     private int djurPortion;

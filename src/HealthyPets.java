@@ -9,10 +9,14 @@ import java.util.Scanner;
  * Copyright: MIT
  */
 public class HealthyPets {
+
+    //enums
     public enum Namn {
         SIXTEN("Sixten", 5000), DOGGE("Dogge", 10000),
         VENUS("Venus", 5000), OVE("Ove", 3000), HYPNO("Hypno", 1000);
 
+
+        //inkapsling
         public final String djurNamn;
         public final int djurVikt;
 
@@ -38,11 +42,11 @@ public class HealthyPets {
 
         Scanner in = new Scanner(System.in);
         String svar;
-        String svarCase;
 
+        //polymorfism & enums
         System.out.println("Vilket djur ska få mat?");
-        svarCase = in.nextLine();
-        svar = svarCase.toLowerCase();
+        svar = in.nextLine();
+        svar = svar.toLowerCase();
         if (svar.equals("sixten")) {
             Djur sixten = new Hund(Namn.SIXTEN.getDjurNamn(), Namn.SIXTEN.getDjurVikt());
             System.out.println(sixten.portion());
