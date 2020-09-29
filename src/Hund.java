@@ -20,6 +20,7 @@ public class Hund extends Djur implements DjurInterface {
     }
 
 
+    //interface
     @Override
     public String portion() {
         setDjurPortion(getVikt() / 100);

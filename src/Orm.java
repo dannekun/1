@@ -16,6 +16,7 @@ public class Orm extends Djur implements DjurInterface {
         super(namn, vikt);
     }
 
+    //interface
     @Override
     public String portion() {
         setDjurPortion(20);

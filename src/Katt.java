@@ -16,6 +16,7 @@ public class Katt extends Djur implements DjurInterface {
         super(namn, vikt);
     }
 
+    //interface
     @Override
     public String portion() {
         setDjurPortion(getVikt() / 150);

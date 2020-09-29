@@ -50,6 +50,7 @@ public class Djur implements DjurInterface {
         this.djurPortion = djurPortion;
     }
 
+    //interface
     @Override
     public String portion() {
         return "Välj ett djur";
