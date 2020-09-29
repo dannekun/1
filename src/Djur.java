@@ -8,8 +8,6 @@
 public class Djur implements DjurInterface {
 
 
-
-
     private int vikt;
     private String namn;
     private int djurPortion;

@@ -9,8 +9,8 @@ import java.util.Scanner;
  * Copyright: MIT
  */
 public class HealthyPets {
-    public enum Namn{
-        SIXTEN("Sixten",5000), DOGGE ("Dogge", 10000),
+    public enum Namn {
+        SIXTEN("Sixten", 5000), DOGGE("Dogge", 10000),
         VENUS("Venus", 5000), OVE("Ove", 3000), HYPNO("Hypno", 1000);
 
         public final String djurNamn;
@@ -24,23 +24,20 @@ public class HealthyPets {
             return djurVikt;
         }
 
-        Namn(String namn, int vikt){
+        Namn(String namn, int vikt) {
             this.djurNamn = namn;
-            this.djurVikt =vikt;
+            this.djurVikt = vikt;
         }
     }
 
     HealthyPets() {
-
         Play();
-
-
     }
 
     public void Play() {
 
         Scanner in = new Scanner(System.in);
-        String svar = null;
+        String svar;
         String svarCase;
 
         System.out.println("Vilket djur ska få mat?");

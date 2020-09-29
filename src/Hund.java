@@ -8,15 +8,14 @@
 public class Hund extends Djur implements DjurInterface {
 
 
-Hund(){
+    Hund() {
 
-}
+    }
 
 
     Hund(String namn, int vikt) {
         super(namn, vikt);
     }
-
 
 
     @Override
