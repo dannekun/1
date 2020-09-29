@@ -6,18 +6,8 @@
  * Copyright: MIT
  */
 public class Djur implements DjurInterface {
-    public enum Namn{
-        SIXTEN("Sixten",5000), DOGGE ("Dogge", 10000),
-        VENUS("Venus", 5000), OVE("Ove", 3000), HYPNO("Hypno", 1000);
 
-        public final String djurNamn;
-        public final int djurVikt;
 
-        Namn(String namn, int vikt){
-            this.djurNamn = namn;
-            this.djurVikt =vikt;
-        }
-    }
 
 
     private int vikt;
@@ -28,11 +18,11 @@ public class Djur implements DjurInterface {
     Djur() {
     }
 
+
     Djur(String namn, int vikt) {
         setNamn(namn);
         setVikt(vikt);
     }
-
 
 
     public String getNamn() {

@@ -8,13 +8,16 @@
 public class Hund extends Djur implements DjurInterface {
 
 
+Hund(){
+
+}
+
 
     Hund(String namn, int vikt) {
         super(namn, vikt);
     }
 
-    public Hund(Namn sixten) {
-    }
+
 
     @Override
     public String portion() {

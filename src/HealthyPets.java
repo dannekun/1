@@ -9,7 +9,18 @@ import java.util.Scanner;
  * Copyright: MIT
  */
 public class HealthyPets {
+    public enum Namn{
+        SIXTEN("Sixten",5000), DOGGE ("Dogge", 10000),
+        VENUS("Venus", 5000), OVE("Ove", 3000), HYPNO("Hypno", 1000);
 
+        public final String djurNamn;
+        public final int djurVikt;
+
+        Namn(String namn, int vikt){
+            this.djurNamn = namn;
+            this.djurVikt =vikt;
+        }
+    }
 
     HealthyPets() {
 
@@ -20,31 +31,27 @@ public class HealthyPets {
 
     public void Play() {
 
-
-
-        System.out.println();
-
         Scanner in = new Scanner(System.in);
-        String svar;
-        Djur sixten = new Hund("Sixten", 5000);
-        Djur dogge = new Hund("Dogge", 10000);
-        Djur venus = new Katt("Venus", 5000);
-        Djur ove = new Katt("Ove", 3000);
-        Djur hypno = new Orm("Hypno", 1000);
-
+        String svar = null;
+        String svarCase;
 
         System.out.println("Vilket djur ska få mat?");
-        svar = in.nextLine();
-        svar.toLowerCase();
+        svarCase = in.nextLine();
+        svar = svarCase.toLowerCase();
         if (svar.equals("sixten")) {
+            Djur sixten = new Hund(Namn.SIXTEN.djurNamn, Namn.SIXTEN.djurVikt);
             System.out.println(sixten.portion());
         } else if (svar.equals("dogge")) {
+            Djur dogge = new Hund(Namn.DOGGE.djurNamn, Namn.DOGGE.djurVikt);
             System.out.println(dogge.portion());
         } else if (svar.equals("venus")) {
+            Djur venus = new Katt(Namn.VENUS.djurNamn, Namn.VENUS.djurVikt);
             System.out.println(venus.portion());
         } else if (svar.equals("ove")) {
+            Djur ove = new Katt(Namn.OVE.djurNamn, Namn.OVE.djurVikt);
             System.out.println(ove.portion());
         } else if (svar.equals("hypno")) {
+            Djur hypno = new Orm(Namn.HYPNO.djurNamn, Namn.HYPNO.djurVikt);
             System.out.println(hypno.portion());
         } else {
             Radbrytning();
