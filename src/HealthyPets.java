@@ -17,8 +17,8 @@ public class HealthyPets {
 
 
         //inkapsling
-        public final String djurNamn;
-        public final int djurVikt;
+        private String djurNamn;
+        private int djurVikt;
 
         public String getDjurNamn() {
             return djurNamn;
@@ -28,9 +28,17 @@ public class HealthyPets {
             return djurVikt;
         }
 
+        public void setDjurNamn(String djurNamn) {
+            this.djurNamn = djurNamn;
+        }
+
+        public void setDjurVikt(int djurVikt) {
+            this.djurVikt = djurVikt;
+        }
+
         Namn(String namn, int vikt) {
-            this.djurNamn = namn;
-            this.djurVikt = vikt;
+            setDjurNamn(namn);
+            setDjurVikt(vikt);
         }
     }
 
